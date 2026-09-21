@@ -23,7 +23,7 @@ db.exec(`
 // Initialize Official Google GenAI SDK
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
-// Express API Route to Process Gmail Threads via Gemini 2.5
+// Express API Route to Process Gmail Threads via Gemini 3.8
 app.post('/api/flow/process', async (req, res) => {
   const { threadId, mimePayload, mode } = req.body;
 
@@ -33,9 +33,9 @@ app.post('/api/flow/process', async (req, res) => {
   }
 
   try {
-    // Flow Mode: Streamlined, context-centric intelligence dispatch
+    // Flow Mode: Streamlined, context-centric intelligence dispatch using gemini-3.8-flash
     const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-3.8-flash',
       contents: `Strip all signatures, legal boilerplate, disclaimers, and pleasantries from this email thread payload. Return only clean, structured, and action-oriented business communication chat fragments: ${JSON.stringify(mimePayload)}`,
     });
 
