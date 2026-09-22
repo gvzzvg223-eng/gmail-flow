@@ -6,7 +6,7 @@ This system seamlessly unifies emails, structural Google Drive attachments, and 
 
 ---
 
-## 🌟 Core Architecture & Capabilities
+## Core Architecture & Capabilities
 
 ### 1. Dual Interface Modes: Flow vs. Formal
 * **Flow Mode:** The default intelligence layout. It uses Gemini AI to dynamically strip out email fluff, signatures, legal disclaimers, and pleasantries—delivering a pure, structured, and action-oriented business chat bubble.
@@ -30,7 +30,7 @@ This system seamlessly unifies emails, structural Google Drive attachments, and 
 
 ---
 
-## 📁 Repository Directory Tree
+##  Repository Directory Tree
 
 ```text
 GmailFlow/
@@ -51,7 +51,7 @@ GmailFlow/
 
 ---
 
-## 🧠 Technology Stack & Integration Footprint
+## Technology Stack & Integration Footprint
 
 * **Frontend:** React 18, Vite, Lucide Icons, Locale-aware Intl APIs.
 * **Backend:** Node.js, Express, `node:sqlite` Native Storage Engine.
@@ -60,6 +60,6 @@ GmailFlow/
 
 ---
 
-## 📄 License & Compliance
+## License & Compliance
 
 Distributed under the **MIT License**. Engineered for elite efficiency, absolute transparency via data tracing, and zero structural reliance on general chatbot templates.
